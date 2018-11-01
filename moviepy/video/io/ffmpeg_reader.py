@@ -255,7 +255,7 @@ def ffmpeg_parse_infos(filename, print_infos=False, check_duration=True,
 
     proc = sp.Popen(cmd, **popen_params)
 
-    proc.stdout.readline()
+    out, err = proc.communicate()
     proc.terminate()
     infos = proc.stderr.read().decode('utf8')
     del proc
