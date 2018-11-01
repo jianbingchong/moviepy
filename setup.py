@@ -103,12 +103,12 @@ with open('README.rst', 'r', 'utf-8') as f:
     readme = f.read()
 
 setup(
-    name='moviepy',
+    name='moviepy_wumii',
     version=__version__,
-    author='Zulko 2017',
+    author='Zulko 2017,jianbingchong',
     description='Video editing with Python',
     long_description=readme,
-    url='https://zulko.github.io/moviepy/',
+    url='https://github.com/jianbingchong/moviepy.git',
     license='MIT License',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
