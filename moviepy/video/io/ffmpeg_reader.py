@@ -95,7 +95,7 @@ class FFMPEG_VideoReader:
                 '-vcodec', 'rawvideo', '-'])
         popen_params = {"bufsize": self.bufsize,
                         "stdout": sp.PIPE,
-                        "stderr": sp.PIPE,
+                        # "stderr": sp.PIPE,
                         "stdin": DEVNULL}
 
         if os.name == "nt":
@@ -247,7 +247,7 @@ def ffmpeg_parse_infos(filename, print_infos=False, check_duration=True,
 
     popen_params = {"bufsize": 10**5,
                     "stdout": sp.PIPE,
-                    # "stderr": sp.PIPE,
+                    "stderr": sp.PIPE,
                     "stdin": DEVNULL}
 
     if os.name == "nt":
